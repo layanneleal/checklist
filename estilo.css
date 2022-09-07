@@ -1,6 +1,6 @@
 :root {
   --primary-color:rgb(139, 212, 243) ;
-  --secundary-color:black;
+  --secondary-color:black;
 }
 
 * {
@@ -29,14 +29,14 @@ body {
 
 .titulo {
   display: flex;
-  background-color: var(--secundary-color);
+  background-color: var(--secondary-color);
   width: 100%;
   height: 50px;
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  box-shadow: 1px 1px 5px var(--secundary-color);
-  font-size: 2rem;
+  box-shadow: 1px 1px 5px var(--secondary-color);
+  font-size: 3rem;
   color: var(--primary-color);
 }
 
@@ -47,20 +47,30 @@ body {
   gap: 10px;
 }
 
+.itens{
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  box-shadow: 1px 1px 5px var(--secondary-color);
+}
+
 .itens > div {
-  width: 40%;
+  width: 80%;
 }
 
 .itens:hover {
   cursor: pointer;
   transition: all .5s ease;
-  background-color: var(--secundary-color);
+  background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
 .itens > input[type='text'] {
   border: none;
-  width: 20%;
+  width: 80%;
   font: inherit;
 }
 
@@ -74,20 +84,20 @@ body {
   text-decoration:line-through;
 }
 
-.item {
+.novoItem {
   display: flex;
   background-color: #fff59d;
   width: 100%;
   height: 50px;
   justify-content: space-evenly;
   padding: 10px 0;
-  box-shadow: 5px 5px 5px var(--secondary-color);
+  box-shadow: 1px 1px 5px var(--secondary-color);
   margin: 10px;
   font: inherit;
 }
 
 
-.item > input {
+.novoItem > input {
   background-color: #fff59d;
   border: none;
   width: 60%;
@@ -95,7 +105,7 @@ body {
   font: inherit;
 }
 
-.item > input::placeholder {
+.novoItem > input::placeholder {
   font-style: italic;
   font-weight: normal;
 }
